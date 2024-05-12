@@ -8,11 +8,12 @@
 </head>
 <body>
 
-    <audio autoplay loop>
-        <source src="./pedro-pedro-pe.mp3" type="audio/mpeg">
-        Tu navegador no soporta la etiqueta de audio.
-      </audio>
-
+  <audio id="background-music" autoplay loop controls>
+    <source src="./pedro-pedro-pe.mp3" type="audio/mpeg">
+    Tu navegador no soporta la etiqueta de audio.
+  </audio>
+  
+  <button onclick="toggleMusic()">Play/Pause</button>
        
     <div class="circle">
         <img src="./loli.jpg" alt="Imagen" class="circle-image">
@@ -22,3 +23,5 @@
 
 </body>
 </html>
+
+<script src="./script.js"></script>
