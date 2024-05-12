@@ -1,0 +1,35 @@
+body{
+    background-color: black;
+}
+
+.circle {
+  margin-top: 40vh;
+  margin-left: 40vw;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    animation: spinAndJump 5s linear infinite alternate;
+  }
+  
+  .circle-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: center; 
+    transform-origin: center center;
+    position: absolute;
+  }
+
+  @keyframes bounce {
+    to {     translate: 0 20px; }
+    }
+    .circle-image    {      animation: bounce 200ms linear infinite alternate;  }
+
+@keyframes spin {
+    to { rotate: -1turn;}
+}
+.circle {
+    animation: spin 10s linear infinite;
+}
